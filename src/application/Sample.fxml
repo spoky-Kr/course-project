@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="428.0" prefWidth="705.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <Label layoutX="268.0" layoutY="26.0" text="Swimming Pool">
+         <font>
+            <Font name="System Italic" size="25.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="passwordField" alignment="TOP_CENTER" layoutX="265.0" layoutY="166.0" promptText="Пароль" style="-fx-background-radius: 30; -fx-border-radius: 30;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </PasswordField>
+      <TextField fx:id="loginField" alignment="TOP_CENTER" layoutX="265.0" layoutY="129.0" promptText="Логин" style="-fx-border-radius: 30; -fx-background-radius: 30;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="enry_button" layoutX="426.0" layoutY="282.0" mnemonicParsing="false" onAction="#on_click_enry" prefHeight="26.0" prefWidth="113.0" style="-fx-background-color: white; -fx-border-color: silver; -fx-border-radius: 30; -fx-background-radius: 30;" text="Вход">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="reg_Button" layoutX="166.0" layoutY="282.0" mnemonicParsing="false" onAction="#on_click_reg" prefHeight="26.0" prefWidth="113.0" style="-fx-background-color: white; -fx-border-color: silver; -fx-background-radius: 30; -fx-border-radius: 30;" text="Регистрация">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="347.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.updateTableController">
+   <children>
+      <Label layoutX="89.0" layoutY="14.0" text="Swimming Pool">
+         <font>
+            <Font name="System Italic" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="updateButton" layoutX="201.0" layoutY="363.0" mnemonicParsing="false" onAction="#on_click_insert" prefHeight="26.0" prefWidth="113.0" style="-fx-background-color: white; -fx-border-color: silver; -fx-border-radius: 30; -fx-background-radius: 30;" text="Изменить">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="backButton" layoutX="32.0" layoutY="363.0" mnemonicParsing="false" onAction="#on_click_back" prefHeight="26.0" prefWidth="113.0" style="-fx-background-color: white; -fx-border-color: silver; -fx-background-radius: 30; -fx-border-radius: 30;" text="Назад">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Button>
+      <TabPane layoutX="30.0" layoutY="55.0" prefHeight="278.0" prefWidth="288.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="tabAbonement" text="Абонементы">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="numAbonem" alignment="TOP_CENTER" layoutX="57.0" layoutY="72.0" promptText="Номер" style="-fx-border-radius: 30; -fx-background-radius: 30;">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="cateAbonem" alignment="TOP_CENTER" layoutX="57.0" layoutY="109.0" promptText="Категория" style="-fx-border-radius: 30; -fx-background-radius: 30;">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="onceAbonem" alignment="TOP_CENTER" layoutX="57.0" layoutY="147.0" promptText="Посещений в неделю" style="-fx-border-radius: 30; -fx-background-radius: 30;">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="costAbonem" alignment="TOP_CENTER" layoutX="57.0" layoutY="185.0" promptText="Стоимость" style="-fx-border-radius: 30; -fx-background-radius: 30;">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <ComboBox fx:id="box_idAbonement" layoutX="56.0" layoutY="30.0" prefHeight="30.0" prefWidth="174.0" promptText="          Код абонемента" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-background-color: white; -fx-border-color: silver;" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="tabPool" text="Бассейны">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="nameFieldPool" alignment="TOP_CENTER" layoutX="57.0" layoutY="51.0" promptText="Название" style="-fx-border-radius: 30; -fx-background-radius: 30;">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="adressFieldPool" alignment="TOP_CENTER" layoutX="57.0" layoutY="88.0" promptText="Адрес" style="-fx-border-radius: 30; -fx-background-radius: 30;">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="varyFieldPool" alignment="TOP_CENTER" layoutX="57.0" layoutY="126.0" promptText="Разновидность" style="-fx-border-radius: 30; -fx-background-radius: 30;">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <ComboBox fx:id="box_idCoach_Pool" layoutX="55.0" layoutY="163.0" prefHeight="30.0" prefWidth="174.0" promptText="              Код тренера" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-background-color: white; -fx-border-color: silver;" />
+                        <ComboBox fx:id="box_idAbonementPool" layoutX="56.0" layoutY="201.0" prefHeight="30.0" prefWidth="174.0" promptText="          Код абонемента" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-background-color: white; -fx-border-color: silver;" />
+                        <ComboBox fx:id="box_idPool" layoutX="57.0" layoutY="14.0" prefHeight="30.0" prefWidth="174.0" promptText="             Код бассейна" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-background-color: white; -fx-border-color: silver;" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="tabCoach" text="Тренера">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ComboBox fx:id="box_idGrCoach" layoutX="57.0" layoutY="145.0" prefHeight="30.0" prefWidth="174.0" promptText="              Код группы" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-background-color: white; -fx-border-color: silver;" />
+                        <TextField fx:id="fioCoach" alignment="TOP_CENTER" layoutX="58.0" layoutY="68.0" promptText="ФИО" style="-fx-border-radius: 30; -fx-background-radius: 30;">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="grCoach" alignment="TOP_CENTER" layoutX="58.0" layoutY="106.0" promptText="График" style="-fx-border-radius: 30; -fx-background-radius: 30;">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <ComboBox fx:id="box_idCoach" layoutX="57.0" layoutY="29.0" prefHeight="30.0" prefWidth="174.0" promptText="              Код тренера" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-background-color: white; -fx-border-color: silver;" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="tabGr" text="Группы">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="250.0" prefWidth="255.0">
+                     <children>
+                        <TextField fx:id="numGr" alignment="TOP_CENTER" layoutX="57.0" layoutY="88.0" promptText="Номер группы" style="-fx-border-radius: 30; -fx-background-radius: 30;">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="cateGr" alignment="TOP_CENTER" layoutX="57.0" layoutY="126.0" promptText="Категория" style="-fx-border-radius: 30; -fx-background-radius: 30;">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <ComboBox fx:id="box_idGr" layoutX="57.0" layoutY="49.0" prefHeight="30.0" prefWidth="174.0" promptText="              Код группы" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-background-color: white; -fx-border-color: silver;" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="tabUsers" text="Пользователи">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="UpassField" alignment="TOP_CENTER" layoutX="57.0" layoutY="163.0" promptText="Пароль" style="-fx-border-radius: 30; -fx-background-radius: 30;">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="UstatusField" alignment="TOP_CENTER" layoutX="57.0" layoutY="122.0" promptText="Статус" style="-fx-border-radius: 30; -fx-background-radius: 30;">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <ComboBox fx:id="box_login" layoutX="56.0" layoutY="80.0" prefHeight="30.0" prefWidth="174.0" promptText="                   Логин" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-background-color: white; -fx-border-color: silver;" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

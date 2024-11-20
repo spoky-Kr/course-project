@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="347.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.dobavUsersController">
+   <children>
+      <Label layoutX="89.0" layoutY="14.0" text="Swimming Pool">
+         <font>
+            <Font name="System Italic" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="loginField" alignment="TOP_CENTER" layoutX="91.0" layoutY="118.0" promptText="Логин" style="-fx-border-radius: 30; -fx-background-radius: 30;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="insertButton" layoutX="208.0" layoutY="336.0" mnemonicParsing="false" onAction="#on_click_insert" prefHeight="26.0" prefWidth="113.0" style="-fx-background-color: white; -fx-border-color: silver; -fx-border-radius: 30; -fx-background-radius: 30;" text="Добавить">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="backButton" layoutX="34.0" layoutY="336.0" mnemonicParsing="false" onAction="#on_click_back" prefHeight="26.0" prefWidth="113.0" style="-fx-background-color: white; -fx-border-color: silver; -fx-background-radius: 30; -fx-border-radius: 30;" text="Назад">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="103.0" layoutY="68.0" text="Новый пользователь:">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="passField" alignment="TOP_CENTER" layoutX="91.0" layoutY="154.0" promptText="Пароль" style="-fx-border-radius: 30; -fx-background-radius: 30;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="nameField" alignment="TOP_CENTER" layoutX="91.0" layoutY="194.0" promptText="Имя" style="-fx-border-radius: 30; -fx-background-radius: 30;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="lastnameField" alignment="TOP_CENTER" layoutX="91.0" layoutY="232.0" promptText="Фамилия" style="-fx-border-radius: 30; -fx-background-radius: 30;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="statusField" alignment="TOP_CENTER" layoutX="91.0" layoutY="275.0" promptText="Статус" style="-fx-border-radius: 30; -fx-background-radius: 30;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
